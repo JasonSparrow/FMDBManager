@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8B3BA415200A3F80CEE1069C /* libPods-FMDBManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB96F1E696D85D9D33F50060 /* libPods-FMDBManager.a */; };
+		968F75301E3443DC00EA5B1E /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 968F752F1E3443DC00EA5B1E /* SQLiteManager.m */; };
+		968F75331E3443F700EA5B1E /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 968F75321E3443F700EA5B1E /* FMDBManager.m */; };
 		968FD8E81E304FD4003A63E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 968FD8E71E304FD4003A63E6 /* main.m */; };
 		968FD8EB1E304FD4003A63E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968FD8EA1E304FD4003A63E6 /* AppDelegate.m */; };
 		968FD8EE1E304FD4003A63E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968FD8ED1E304FD4003A63E6 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		18687907CD7E3D1145372CDE /* Pods-FMDBManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBManager/Pods-FMDBManager.release.xcconfig"; sourceTree = "<group>"; };
+		968F752E1E3443DC00EA5B1E /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		968F752F1E3443DC00EA5B1E /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
+		968F75311E3443F700EA5B1E /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		968F75321E3443F700EA5B1E /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		968FD8E31E304FD4003A63E6 /* FMDBManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968FD8E71E304FD4003A63E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		968FD8E91E304FD4003A63E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +58,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		968F75291E3443A300EA5B1E /* FMDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				968F75311E3443F700EA5B1E /* FMDBManager.h */,
+				968F75321E3443F700EA5B1E /* FMDBManager.m */,
+			);
+			path = FMDBManager;
+			sourceTree = "<group>";
+		};
+		968F752D1E3443BE00EA5B1E /* SQLiteManager */ = {
+			isa = PBXGroup;
+			children = (
+				968F752E1E3443DC00EA5B1E /* SQLiteManager.h */,
+				968F752F1E3443DC00EA5B1E /* SQLiteManager.m */,
+			);
+			path = SQLiteManager;
+			sourceTree = "<group>";
+		};
 		968FD8DA1E304FD4003A63E6 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +97,8 @@
 		968FD8E51E304FD4003A63E6 /* FMDBManager */ = {
 			isa = PBXGroup;
 			children = (
+				968F752D1E3443BE00EA5B1E /* SQLiteManager */,
+				968F75291E3443A300EA5B1E /* FMDBManager */,
 				968FD8E91E304FD4003A63E6 /* AppDelegate.h */,
 				968FD8EA1E304FD4003A63E6 /* AppDelegate.m */,
 				968FD8EC1E304FD4003A63E6 /* ViewController.h */,
@@ -184,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BEACCFE1989598287C3AC035 /* [CP] Copy Pods Resources */ = {
@@ -224,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968F75301E3443DC00EA5B1E /* SQLiteManager.m in Sources */,
 				968FD8EE1E304FD4003A63E6 /* ViewController.m in Sources */,
+				968F75331E3443F700EA5B1E /* FMDBManager.m in Sources */,
 				968FD8EB1E304FD4003A63E6 /* AppDelegate.m in Sources */,
 				968FD8E81E304FD4003A63E6 /* main.m in Sources */,
 			);
@@ -377,6 +405,7 @@
 				968FD8FC1E304FD4003A63E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
