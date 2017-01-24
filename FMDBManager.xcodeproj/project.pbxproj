@@ -16,6 +16,7 @@
 		968FD8F11E304FD4003A63E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968FD8EF1E304FD4003A63E6 /* Main.storyboard */; };
 		968FD8F31E304FD4003A63E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968FD8F21E304FD4003A63E6 /* Assets.xcassets */; };
 		968FD8F61E304FD4003A63E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968FD8F41E304FD4003A63E6 /* LaunchScreen.storyboard */; };
+		96FBD2A21E3600C300295DD8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FBD2A11E3600C300295DD8 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		968FD8F21E304FD4003A63E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968FD8F51E304FD4003A63E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		968FD8F71E304FD4003A63E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FBD2A11E3600C300295DD8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C530410C4216DB9BE789A037 /* Pods-FMDBManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBManager/Pods-FMDBManager.debug.xcconfig"; sourceTree = "<group>"; };
 		FB96F1E696D85D9D33F50060 /* libPods-FMDBManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDBManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FBD2A21E3600C300295DD8 /* libsqlite3.0.tbd in Frameworks */,
 				8B3BA415200A3F80CEE1069C /* libPods-FMDBManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +56,7 @@
 		91CA056A596A006334BDE719 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96FBD2A11E3600C300295DD8 /* libsqlite3.0.tbd */,
 				FB96F1E696D85D9D33F50060 /* libPods-FMDBManager.a */,
 			);
 			name = Frameworks;

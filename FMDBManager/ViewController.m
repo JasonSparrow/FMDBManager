@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SQLiteManager.h"
 
 @interface ViewController ()
 
@@ -19,9 +20,22 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)open:(id)sender {
+    [[SQLiteManager shareSQL] open];
 }
-
+- (IBAction)create:(id)sender {
+    [[SQLiteManager shareSQL] create];
+}
+- (IBAction)insert:(id)sender {
+    [[SQLiteManager shareSQL] insert];
+}
+- (IBAction)select:(id)sender {
+    [[SQLiteManager shareSQL] select];
+}
+- (IBAction)delete:(id)sender {
+    [[SQLiteManager shareSQL] deleteData];
+}
+- (IBAction)close:(id)sender {
+    [[SQLiteManager shareSQL] close];
+}
 @end
